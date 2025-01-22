@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>UMass Boxing Club</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<style>
+  .header_section {
+    background-color: #BA0C2F;
+    width: 100%;
+    position: relative;
+  }
+
+  .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: 600;
+  }
+
+  /* Footer */
+  .footer_section {
+    background-color: #BA0C2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer_section p {
+    margin: 0;
+    color: white;
+  }
+
+  /* Centering the contact section */
+  .contact_section {
+    text-align: center; /* Center content */
+    padding: 40px 0; /* Add some padding for aesthetics */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+  }
+
+  .contact_section .info_items {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+</style>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>UMASS BOXING CLUB</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="training.html">Training Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="why.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="membership.html">Membership & FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- Scripts -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get the current URL path
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        // Remove 'active' class from all nav-links
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+
+        // Add 'active' class to the current nav-link based on URL
+        navLinks.forEach(function(link) {
+          var href = link.getAttribute('href');
+          if (page === href || (page === '' && href === 'index.html')) {
+            link.classList.add('active');  // Only the active link gets this class
+          }
+        });
+
+        // Handle hover effect without affecting the active link
+        navLinks.forEach(function(link) {
+          link.addEventListener('mouseover', function() {
+            link.classList.add('hovering'); // Add 'hovering' class on mouseover
+          });
+          link.addEventListener('mouseout', function() {
+            link.classList.remove('hovering'); // Remove 'hovering' class on mouseout
+          });
+        });
+      });
+    </script>
+
+    <style>
+      /* Custom Styles for Active Link */
+      .navbar-nav .nav-link.active {
+        font-weight: bold;
+        color: #900020;
+        border-bottom: 2px solid #900020; /* Bar below the name */
+        padding-bottom: 10px; /* Ensure there's space for the underline */
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #900020;
+      }
+    </style>
+  </div>
+
+<!-- contact section -->
+<section class="contact_section">
+  <div class="container-fluid">
+    <div class="row justify-content-center"> <!-- Centering the row -->
+      <div class="col-lg-5 col-md-6">
+        <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
+          <div class="heading_container">
+            <h2>
+              Contact Us
+            </h2>
+          </div>
+          <form id="contactForm">
+            <div>
+              <input type="text" placeholder="Name" required />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Message" required />
+            </div>
+            <div>
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter">Sign up for our newsletter</label>
+            </div>
+            <div class="d-flex justify-content-center"> <!-- Centering button -->
+              <button type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="contact.js"></script>
+  <script>
+    // Form submission handling
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      
+      // Get form data
+      const formData = new FormData(event.target);
+      
+      // Prepare data for submission
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        message: formData.get('message'),
+        newsletter: formData.get('newsletter') ? true : false,
+      };
+
+      // Send data to the server (replace with your actual endpoint)
+      fetch('your_backend_endpoint_here', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Message sent successfully!');
+          event.target.reset(); // Reset the form
+        } else {
+          alert('There was an error sending your message. Please try again.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error sending your message. Please try again.');
+      });
+    });
+  </script>
+</section>
+<!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+        <a href="https://www.umass.edu/campusrec/facilities/rec-center" target="_blank">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                UMass Rec Center 
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://discord.com/channels/1014667298872758333/1014947393529196544" target="_blank">
+          <div class="item">
+            <div class="img-box box-2">
+              <img src="https://cdn-icons-png.flaticon.com/128/15047/15047557.png" alt="Discord Logo" style="width: 50px; height: 50px;">
+            </div>
+            <div class="detail-box">
+              <p>Join our Discord!</p>
+            </div>
+          </div>
+        </a>
+        <a href="mailto:umassboxingofficial@gmail.com">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                <a href="mailto:umassboxingofficial@gmail.com" style="color: white; text-decoration: none;">umassboxingofficial@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; 2024 UMass Boxing Club | All rights reserved.</a>
+      </p>
+    </div>
+  </section>
+  <!-- end footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

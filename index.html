@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="Boxing, Club, UMass, Amherst" />
+  <meta name="description" content="UMass Amherst Boxing Club official website" />
+  <meta name="author" content="UMass Boxing Club" />
+  
+  <title>UMass Boxing Club</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  
+  <!-- Responsive styles -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header */
+    .header_section {
+      background-color: #BA0C2F;
+      width: 100%;
+      position: relative;
+    }
+
+    .navbar {
+      background-color: #BA0C2F;
+      margin: 0;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      font-weight: 600;
+    }
+
+    /* Slider Section */
+    .slider_section {
+      position: relative;
+      background-color: white;
+      color: black;
+      padding: 60px 0;
+      text-align: center;
+      min-height: 600px; /* Set a fixed height that fits the tallest slide */
+    }
+
+    .slider_section h1, .slider_section h2, .slider_section h3 {
+      font-weight: 700;
+      color: black;
+    }
+
+    .slider_section p {
+      font-size: 1.2rem;
+      color: black;
+      max-height: 100px; /* Ensure text does not overflow */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .slider_section .detail-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 500px; /* Adjust this based on the height of the tallest content */
+      height: 100%; /* Ensure consistent height for all slides */
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .slider_section img {
+      width: 150px;
+      height: auto; /* Ensure consistent height to avoid resizing issues */
+      margin-bottom: 20px;
+    }
+
+    .slider_section .carousel-item {
+      padding: 40px;
+      height: 100%; /* Ensure consistent height for all carousel items */
+    }
+
+    /* Carousel Indicators */
+    .carousel-indicators {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0;
+    }
+
+    .carousel-indicators li {
+      background-color: black;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+    }
+
+    .carousel-indicators .active {
+      background-color: black;
+    }
+
+    /* Dot Navigation Below Events Link */
+    .dot-navigation {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .dot-navigation span {
+      display: block;
+      background-color: black;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dot-navigation span.active {
+      background-color: #BA0C2F;
+    }
+
+    /* Overview Section */
+    .overview_section {
+      padding: 50px 0;
+    }
+
+    .overview_section h2 {
+      color: #BA0C2F;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .overview_section p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Footer */
+    .footer_section {
+      background-color: #BA0C2F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer_section p {
+      margin: 0;
+      color: white;
+    }
+
+    /* Hover and Button Styles */
+    .slider_section a {
+      background-color: #BA0C2F;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .slider_section a:hover {
+      background-color: #900020;
+      color: white;
+    }
+
+    /* Custom Styles for View Events Link */
+    .slider_section .detail-box a {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .slider_section .detail-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+
+      .slider_section p {
+        font-size: 1rem;
+      }
+
+      .overview_section h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .slider_section h1, .slider_section h2, .slider_section h3 {
+        font-size: 1.5rem;
+      }
+
+      .slider_section p {
+        font-size: 0.9rem;
+      }
+
+      .overview_section h2 {
+        font-size: 1.2rem;
+      }
+
+      .dot-navigation span {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  </style>
+</head>
+
+<!-- Scripts -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the current URL path
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Remove 'active' class from all nav-links
+    navLinks.forEach(function(link) {
+      link.classList.remove('active');
+    });
+
+    // Add 'active' class to the current nav-link based on URL
+    navLinks.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (page === href || (page === '' && href === 'index.html')) {
+        link.classList.add('active');  // Only the active link gets this class
+      }
+    });
+
+    // Handle hover effect without affecting the active link
+    navLinks.forEach(function(link) {
+      link.addEventListener('mouseover', function() {
+        link.classList.add('hovering'); // Add 'hovering' class on mouseover
+      });
+      link.addEventListener('mouseout', function() {
+        link.classList.remove('hovering'); // Remove 'hovering' class on mouseout
+      });
+    });
+  });
+</script>
+
+<style>
+  /* Custom Styles for Active Link */
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #900020;
+    border-bottom: 2px solid #900020; /* Bar below the name */
+    padding-bottom: 10px; /* Ensure there's space for the underline */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #900020;
+  }
+</style>
+
+<body>
+  <!-- header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>University of Massachusetts Amherst</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="training.html">Training Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="membership.html">Membership & FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <!-- Slider Section -->
+  <section class="slider_section">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="detail-box">
+              <img src="/images/UMass Boxing Club logo.webp" alt="UMass Boxing Club Logo">
+              <h3>Umass</h3>
+              <h2>Boxing</h2>
+              <h1>Club</h1>
+              <p>
+                Whether you're a seasoned boxer or new to the sport, UMass Boxing Club offers a supportive environment for all skill levels. Join us for fitness, discipline, and camaraderie.
+              </p>
+              <a href="/events.html">View Events</a>
+            </div>
+          </div>
+        </div>
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="detail-box">
+              <img src="/images/UMass Boxing Club logo.webp" alt="UMass Boxing Club Logo">
+              <h3>Train with Us</h3>
+              <h2>Join Today</h2>
+              <h1>Get Stronger</h1>
+              <p>
+                Experience our intense fitness and boxing training sessions, led by experienced coaches. Perfect for anyone looking to improve strength, stamina, and discipline.
+              </p>
+              <a href="/membership.html">Join the Club</a>
+            </div>
+          </div>
+        </div>
+        <!-- Third Slide -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="detail-box">
+              <img src="/images/UMass Boxing Club logo.webp" alt="UMass Boxing Club Logo">
+              <h3>Competition</h3>
+              <h2>Challenge Yourself</h2>
+              <h1>Fight & Compete</h1>
+              <p>
+                Push your limits and join our competitive boxing team. Whether sparring or entering tournaments, UMass Boxing Club offers opportunities to take your skills to the next level.
+              </p>
+              <a href="/events.html">View Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dot Navigation Below Events Link -->
+      <div class="dot-navigation">
+        <span data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></span>
+        <span data-target="#carouselExampleIndicators" data-slide-to="1"></span>
+        <span data-target="#carouselExampleIndicators" data-slide-to="2"></span>
+      </div>
+
+      <!-- Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Add controls for manual navigation -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section class="overview_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Overview of the Club</h2>
+          <p>
+            The UMass Boxing Club provides an inclusive environment for all students interested in the sport. Whether you're a beginner or an experienced athlete, we focus on fitness, proper boxing techniques, and building self-discipline.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2>Mission Statement</h2>
+          <p>
+            Our mission is to promote physical and mental well-being through boxing. We foster an environment that encourages discipline, respect, and camaraderie while empowering individuals to surpass their limits.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer_section">
+    <p>&copy; 2024 UMass Boxing Club | All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.dot-navigation span').click(function() {
+        var slideTo = $(this).attr('data-slide-to');
+        $('#carouselExampleIndicators').carousel(parseInt(slideTo));
+        $('.dot-navigation span').removeClass('active');
+        $(this).addClass('active');
+      });
+
+      $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+        var index = $(e.relatedTarget).index();
+        $('.dot-navigation span').removeClass('active');
+        $('.dot-navigation span').eq(index).addClass('active');
+      });
+    });
+  </script>
+
+</body>
+
+</html>

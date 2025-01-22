@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="UMass, Boxing, Club" />
+  <meta name="description" content="UMass Boxing Club" />
+  <meta name="author" content="UMass Boxing Club" />
+
+  <title>UMass Boxing Club</title>
+
+  <!-- Owl Carousel stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+   <!-- header section starts -->
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a class="navbar-brand" href="index.html">
+        <span>UMASS BOXING CLUB</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="training.html">Training Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="why.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">Membership & FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- end header section -->
+
+<!-- Scripts -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the current URL path
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Remove 'active' class from all nav-links
+    navLinks.forEach(function(link) {
+      link.classList.remove('active');
+    });
+
+    // Add 'active' class to the current nav-link based on URL
+    navLinks.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (page === href || (page === '' && href === 'index.html')) {
+        link.classList.add('active');  // Only the active link gets this class
+      }
+    });
+
+    // Handle hover effect without affecting the active link
+    navLinks.forEach(function(link) {
+      link.addEventListener('mouseover', function() {
+        link.classList.add('hovering'); // Add 'hovering' class on mouseover
+      });
+      link.addEventListener('mouseout', function() {
+        link.classList.remove('hovering'); // Remove 'hovering' class on mouseout
+      });
+    });
+  });
+</script>
+
+<style>
+  /* Custom Styles for Active Link */
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #900020;
+    border-bottom: 2px solid #900020; /* Bar below the name */
+    padding-bottom: 10px; /* Ensure there's space for the underline */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #900020;
+  }
+</style>
+  </div>
+
+  <!-- Us section -->
+  <section class="us_section layout_padding">
+    <div class="container">
+      <div class="heading_container text-center">
+        <h2>Why Choose Us</h2>
+      </div>
+
+      <div class="us_container text-center">
+        <div class="row justify-content-center">
+                    <!-- Club History -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="#club-history" class="text-decoration-none">
+              <div class="box hover-effect">
+                <div class="img-box">
+                  <img src="images/u-1.png" alt="Club History">
+                </div>
+                <div class="detail-box">
+                  <h5>Club History</h5>
+                  <p>
+                    The UMass Boxing Club was established in 2007 and has since grown into a competitive and inclusive community.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Leadership Team & Coaches -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="#our-team" class="text-decoration-none">
+              <div class="box hover-effect">
+                <div class="img-box">
+                  <img src="images/u-4.png" alt="Leadership Team & Coaches">
+                </div>
+                <div class="detail-box">
+                  <h5>Leadership Team & Coaches</h5>
+                  <p>
+                    Meet our dedicated team of coaches and leaders who help foster a supportive environment.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Training Sessions -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="training.html" class="text-decoration-none">
+              <div class="box hover-effect">
+                <div class="img-box">
+                  <img src="images/u-2.png" alt="Training Sessions">
+                </div>
+                <div class="detail-box">
+                  <h5>Training Sessions</h5>
+                  <p>
+                    We offer three weekly training sessions along with additional captain-led practices to enhance members' skills.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end Us section -->
+
+  <!-- Add your CSS -->
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Ensure background matches */
+    color: #333; /* Ensure text color matches */
+  }
+
+  /* Header */
+  .header_section {
+    background-color: #BA0C2F;
+    width: 100%;
+    position: relative;
+  }
+
+  .header_section .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem; /* Ensure font size matches */
+    font-weight: 700; /* Ensure font weight matches */
+  }
+
+  .header_section .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1rem; /* Adjust font size to match reference */
+    margin-right: 20px;
+    font-weight: 600; /* Ensure font weight matches */
+  }
+
+  .header_section .navbar-nav .nav-link.active {
+    color: #f1f1f1;
+  }
+
+  .header_section .navbar-toggler-icon {
+    background-image: none;
+  }
+
+  .header_section .navbar-toggler {
+    border: none;
+  }
+
+  /* Us Section */
+  .us_section {
+    padding: 60px 0;
+    background-color: #ffffff; /* White background color */
+  }
+
+  .heading_container h2 {
+    color: #BA0C2F; /* Red color */
+    font-size: 2rem; /* Adjust font size to match reference */
+    font-weight: 700; /* Ensure font weight matches */
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .box img {
+    max-width: 100px;
+    margin: 0 auto 20px;
+  }
+
+  .box h5 {
+    color: #BA0C2F; /* Red color */
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .box p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 0;
+    min-height: 80px;
+  }
+
+  /* Hover effects */
+  .hover-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .hover-effect:hover h5 {
+    color: #333;
+  }
+
+  .hover-effect:hover p {
+    color: #000;
+  }
+
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .box {
+      margin-bottom: 30px;
+    }
+
+    .box img {
+      max-width: 80px;
+    }
+
+    .heading_container h2 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .box h5 {
+      font-size: 20px;
+    }
+
+    .box p {
+      font-size: 14px;
+    }
+  }
+</style>
+
+<!-- Gallery Section with 40 Sliding Images -->
+<section class="gallery_section layout_padding">
+  <div class="container">
+    <div class="heading_container text-center">
+      <h2>Our Gallery</h2>
+    </div>
+    <div id="galleryCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+        <!-- Generating 40 indicators -->
+        <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#galleryCarousel" data-slide-to="1"></li>
+        <!-- More indicators here up to 40... -->
+        <li data-target="#galleryCarousel" data-slide-to="39"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- Example of a Carousel item. Repeat this block 40 times for 40 slides -->
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/First.jpg" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Boxing Event 1</h5>
+            <p>Exciting match at the UMass boxing arena.</p>
+          </div>
+        </div>
+        <!-- Repeat similar blocks for other slides -->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/Second.jpg" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Training Session</h5>
+            <p>Members honing their skills during practice.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/Third.jpg" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Training Session</h5>
+            <p>Members honing their skills during practice.</p>
+          </div>
+        </div>
+        <!-- Repeat for all 40 slides -->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/Third.jpg" alt="Slide 40">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Boxing Event 40</h5>
+            <p>The final event in our 40-slide gallery.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- end Gallery section -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<!-- Add CSS for responsive design -->
+<style>
+  .gallery_section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+
+  .carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    filter: brightness(0.85);
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .carousel-caption p {
+    font-size: 16px;
+    color: #ddd;
+  }
+
+  .club_leadership_section {
+  padding: 40px 0;
+}
+
+.club_leadership_section .heading_container h2 {
+  margin-bottom: 30px;
+}
+
+.club_presidents, .club_captains {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.club_presidents h3, .club_captains h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.club_presidents ul, .club_captains ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.club_presidents ul li, .club_captains ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* General Styles */
+.staff_section .img-box, .coaches_section .img-box {
+  text-align: center;
+  margin-bottom: 1.5rem; /* Add spacing between images and text */
+}
+
+.staff_section .img-box img, .coaches_section .img-box img {
+  border-radius: 50%; /* Makes the image circular */
+  width: 100%; /* Adjust to fit container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Align section with coach section */
+.staff_section, .coaches_section {
+  padding: 2rem 0; /* Adjust padding as needed */
+}
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      max-height: 300px;
+    }
+
+    .carousel-caption h5 {
+      font-size: 18px;
+    }
+
+    .carousel-caption p {
+      font-size: 14px;
+    }
+  }
+</style>
+
+<!-- Add JavaScript for auto-scroll and manual navigation -->
+<script>
+  $(document).ready(function () {
+    $('#galleryCarousel').carousel({
+      interval: 3000, // Auto-scroll every 3 seconds
+      pause: 'hover' // Pause auto-scroll when hovering
+    });
+  });
+</script>
+
+<!-- Coaches with Descriptions -->
+<section class="coaches_section layout_padding">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-lg-6 col-md-12 mx-auto">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/Coach-Sean.jpg" alt="Sean Donnelly">
+          </div>
+          <div class="name">
+            <h5>Sean Donnelly</h5>
+            <p>Certified USA Boxing Coach</p>
+          </div>
+          <p><strong>Head Coach</strong><br>
+            Began boxing in high school in 2012. He then joined the UMass Boxing team in 2013 and was appointed team captain by coach Rocky Snow. Sean last competed in February 2020. While at UMass Amherst, he studied English + creative writing, and now works as a commercial content writer.<br><br>
+            "Boxing gave me self-confidence and taught me plenty of life lessons. Above all, it showed me that you can achieve anything you put your mind to if you're willing to put in the work."<br><br>
+            2014-2017-UMass Boxing Team Captain
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 mx-auto">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/Coach-Meiya.jpg" alt="Meiya Berkey">
+          </div>
+          <div class="name">
+            <h5>Meiya Berkey</h5>
+            <p>Certified USA Boxing Coach</p>
+          </div>
+          <p><strong>Head Coach</strong><br>
+            Began boxing in 2014 at UMass Amherst under coach Rocky Snow. Competed throughout her college career, while earning a BS degree in Nutrition. She also currently trains in Brazilian Jiu Jitsu and teaches cardio kickboxing.<br><br>
+            "We train hard and we train smart. Boxing has taught me not to place limits on myself. You get out what you put in."<br><br>
+            2015 + 2018-Golden Glove Champion 106lbs<br>
+            2015-Kevin Ambrose Female Boxer of the Night 101lbs<br>
+            2018-NCBA All-American 112lbs<br>
+            2018-Bronze NCBA Nationals 112lbs
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Staff Section -->
+<section id="our-team">
+  <div class="container">
+    <div class="heading_container">
+      <h2>Our Team</h2>
+    </div>
+    <div class="row justify-content-center">
+
+      <!-- Staff Member Card -->
+      <div class="col-lg-4 col-md-6 mx-auto mb-4">
+        <div class="team-img-box">
+          <img src="images/President.jpg" alt="Vito DiPietro">
+        </div>
+        <div class="name">
+          <h5>Vito DiPietro</h5>
+          <p>President</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mx-auto mb-4">
+        <div class="team-img-box kotaro-img-box">
+          <img src="images/Vice-President.jpg" alt="Kotaro Yabe">
+        </div>
+        <div class="name">
+          <h5>Kotaro Yabe</h5>
+          <p>Vice President + Team Captain</p>
+        </div>
+      </div>      
+
+      <div class="col-lg-4 col-md-6 mx-auto mb-4">
+        <div class="team-img-box">
+          <img src="images/Team-Captain.jpg" alt="Karalynn Aguilar">
+        </div>
+        <div class="name">
+          <h5>Karalynn Aguilar</h5>
+          <p>Team Captain</p>
+        </div>
+      </div>
+
+      <!-- Additional Staff Members -->
+      <div class="col-lg-4 col-md-6 mx-auto mb-4">
+        <div class="team-img-box">
+          <img src="images/Treasurer.jpg" alt="Zach Burns">
+        </div>
+        <div class="name">
+          <h5>Zach Burns</h5>
+          <p>Treasurer</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mx-auto mb-4">
+        <div class="team-img-box">
+          <img src="images/Secretary.jpg" alt="Neakon Kargar">
+        </div>
+        <div class="name">
+          <h5>Neakon Kargar</h5>
+          <p>Secretary</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mx-auto mb-4">
+        <div class="team-img-box">
+          <img src="images/Social-Media.jpg" alt="Alice Potapov">
+        </div>
+        <div class="name">
+          <h5>Alice Potapov</h5>
+          <p>Social Media Manager</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 mx-auto mb-4">
+        <div class="team-img-box">
+          <img src="images/Events.jpg" alt="Ron Bajrami">
+        </div>
+        <div class="name">
+          <h5>Ron Bajrami</h5>
+          <p>Events Coordinator</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 mx-auto mb-4">
+        <div class="team-img-box">
+          <img src="images/Networking-Advisor.jpg" alt="Chanu Lim">
+        </div>
+        <div class="name">
+          <h5>Chanu Lim</h5>
+          <p>Networking Advisor + Equipment Manager</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Add your CSS -->
+<style>
+  .team-img-box {
+    width: 150px; /* Set a consistent width */
+    height: 150px; /* Set a consistent height */
+    border-radius: 50%; /* Make the images circular */
+    overflow: hidden; /* Ensure overflow is hidden */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Center the images */
+  }
+
+  .team-img-box img {
+    width: 100%; /* Ensure the image fills the box */
+    height: 100%; /* Maintain the height of the box */
+    object-fit: cover; /* Keep the image aspect ratio and cover the container */
+  }
+
+  .name {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .name h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .name p {
+    font-size: 14px;
+    color: #777;
+  }
+</style>
+
+<!-- Club History Section -->
+<section id="club-history">
+  <div class="container">
+    <div class="heading_container text-center">
+      <h2>Club History</h2>
+    </div>
+    <div class="history_container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            The UMass Boxing Club was founded in 2007 by President Tom McDevitt and VP Regina Diemand. In 2010, the competition team was established by Coach Rocky Snow, a Marine Corps Vietnam War veteran with over 40 years of boxing experience. Within 2 years, Coach Rocky guided Josue Lopez to a National Championship.
+          </p>
+          <p>
+            Josue was a three-time NCBA All-American and won Gold at the 2012 and 2013 National Championships (132lbs), in addition to serving as club president and team captain.
+          </p>
+          <p>
+            After Coach Rocky's retirement, the team is now led by co-head coaches and UMass Boxing alums, Sean Donnelly and Meiya Berkey. Both are standout competitors with a decade of experience and mentorship under Coach Rocky. Their aim is to continue his legacy by helping members succeed in both the ring and the classroom.
+          </p>
+          <p>
+            Members learn fundamental boxing techniques and engage in cardio-based exercises under professional supervision. The club aims to promote healthy lifestyles, a sense of community, and most importantly, fun!
+          </p>
+          <p>
+            Many UMass Boxing alumni credit their current success and friendships to their time in the club.
+          </p>
+        </div>
+        
+        <!-- Coach Rocky Snow Section -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3>Coach Rocky Snow</h3>
+            <p>
+              Rocky Snow began boxing in 1975 at the Holyoke Boys and Girls Club. Despite starting late (24 years old), he quickly made a name for himself by winning the New England Golden Gloves at 126 pounds in early 1976. As a Marine and Vietnam War veteran, boxing was the perfect outlet for him.
+            </p>
+            <p>
+              Moving to the professional ranks the following year, Rocky fought 26 times over a decade. In the 1980s, he transitioned to a coaching role, mentoring many kids in the Holyoke and Springfield areas. His fighters won various titles and accolades, but safety and self-improvement remained his top priorities.
+            </p>
+            <p>
+              Rocky continued coaching at Westover Air Reserve Base, volunteering and training armed forces personnel in weight lifting and general fitness. His collegiate coaching career spanned multiple decades, including tenures at Western New England University and Central Connecticut State University. From 2010 to 2022, he coached UMass Boxing, guiding over 70 collegiate boxers, including NCBA National champions and All-Americans.
+            </p>
+            <p>
+              Overall, Coach Rocky has dedicated nearly half a century to the sport as a fighter, coach, and mentor, with a steadfast focus on keeping his fighters safe and helping them become champions both inside and outside the ring.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="/images/Coach rocky snow.jpg" alt="Coach Rocky Snow" class="img-fluid coach-image">
+          </div>
+        </div>
+        <!-- End Coach Rocky Snow Section -->
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Club History Section -->
+
+<style>
+.coach-image {
+  border: 5px solid #BA0C2F; /* Black border around the image */
+  border-radius: 8px; /* Optional rounded corners */
+  max-height: 100%; /* Ensures the image height adjusts to match the content */
+  object-fit: cover; /* Crops the image from top and bottom to fit the space */
+  width: 100%; /* Ensures the image takes the width of its container */
+}
+</style>
+
+<!-- Club Presidents & Captains Section -->
+<section class="club_leadership_section layout_padding">
+  <div class="container">
+    <div class="heading_container text-center">
+      <h2>Club Presidents & Captains</h2>
+    </div>
+    <div class="row">
+      <!-- Club Presidents Column -->
+      <div class="col-lg-6">
+        <div class="club_presidents">
+          <h3>Club Presidents</h3>
+          <ul>
+            <li>Tom McDevitt</li>
+            <li>Ben Goldman</li>
+            <li>Alfred Kimani</li>
+            <li>Samantha Giffin</li>
+            <li>John Lee</li>
+            <li>Chris Moore</li>
+            <li>Calvin Kwong</li>
+            <li>Anton Pritchard</li>
+            <li>Michelle Creedon</li>
+            <li>Ryan Durant</li>
+            <li>Alexei Cross</li>
+            <li>Clint Sengmany</li>
+            <li>Vito DiPietro</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Club Captains Column -->
+      <div class="col-lg-6">
+        <div class="club_captains">
+          <h3>Club Captains</h3>
+          <ul>
+            <li>Josue Lopez</li>
+            <li>Alfred Kimani</li>
+            <li>Sean Donnelly</li>
+            <li>Meiya Berkey</li>
+            <li>Christian Moura</li>
+            <li>Richard Young</li>
+            <li>Tyler Beraldi</li>
+            <li>Michael Pugliese</li>
+            <li>Paulo Garcia</li>
+            <li>Karalynn Aguilar</li>
+            <li>Kotaro Yabe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Club Presidents & Captains Section -->
+
+
+
+
+  <!-- Footer Section -->
+<footer class="footer_section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h5>UMass Boxing Club</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <ul class="footer_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="training.html">Trainers</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="why.html">Why Us</a></li>
+          <li><a href="membership.html">Membership & FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_bottom text-center mt-4">
+      <p>&copy; 2024 UMass Boxing Club | All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- end Footer section -->
+
+<!-- Add your CSS for the footer -->
+<style>
+  .footer_section {
+    background-color: #BA0C2F;
+    padding: 40px 0;
+    color: #fff;
+  }
+
+  .footer_section h5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .footer_section p {
+      margin: 0;
+      color: white;
+    }
+
+  .footer_links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer_links li {
+    display: inline;
+  }
+
+  .footer_links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .footer_links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer_bottom {
+    margin-top: 20px;
+    font-size: 14px;
+  }
